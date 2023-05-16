@@ -6,6 +6,12 @@ btn.forEach(item => {
         const computerChoises =choises[random]
         if(item.id === computerChoises){
             console.log(`It's Tie || Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
+        }else if(item.id === "rock"){
+            if(computerChoises === "paper"){
+                console.log(`You Win!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
+            }else{
+                console.log(`You Lose!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
+            }
         }
     })
 })
