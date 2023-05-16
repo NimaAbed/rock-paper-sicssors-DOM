@@ -4,5 +4,8 @@ btn.forEach(item => {
     item.addEventListener("click",function(){
         const random =Math.round(Math.random()*2)
         const computerChoises =choises[random]
+        if(item.id === computerChoises){
+            console.log(`It's Tie || Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
+        }
     })
 })
