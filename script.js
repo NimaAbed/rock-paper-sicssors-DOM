@@ -7,19 +7,19 @@ btn.forEach(item => {
         if(item.id === computerChoises){
             console.log(`It's Tie || Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
         }else if(item.id === "rock"){
-            if(computerChoises === "paper"){
-                console.log(`You Win!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
-            }else{
-                console.log(`You Lose!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
-            }
-        }else if(item.id === "paper"){
             if(computerChoises === "sicssor"){
                 console.log(`You Win!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
             }else{
                 console.log(`You Lose!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
             }
-        }else if(item.id === "sicssor"){
+        }else if(item.id === "paper"){
             if(computerChoises === "rock"){
+                console.log(`You Win!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
+            }else{
+                console.log(`You Lose!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
+            }
+        }else if(item.id === "sicssor"){
+            if(computerChoises === "paper"){
                 console.log(`You Win!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
             }else{
                 console.log(`You Lose!||Your Choise Is ${item.id} & Computer Choise Is ${computerChoises}`)
